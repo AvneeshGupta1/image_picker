@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nguyenhoanglam.imagepicker.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foregroundGravity="center"
+    tools:override="false">
+
+    <ImageView
+        android:id="@+id/image_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <View
+        android:id="@+id/transparent_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/thumbnail_video"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/video_thumb"
+        android:visibility="gone" />
+
+    <com.nguyenhoanglam.imagepicker.util.SmoothCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/gif_indicator"
+        style="@style/imagepicker_TextSmall"
+        android:layout_gravity="bottom"
+        android:background="@color/imagepicker_black_alpha_50"
+        android:paddingBottom="@dimen/imagepicker_padding_small"
+        android:paddingLeft="@dimen/imagepicker_padding_large"
+        android:paddingRight="@dimen/imagepicker_padding_large"
+        android:paddingTop="@dimen/imagepicker_padding_small"
+        android:text="@string/imagepicker_text_gif"
+        android:textColor="@color/imagepicker_white"
+        android:visibility="visible" />
+</com.nguyenhoanglam.imagepicker.widget.SquareFrameLayout>
