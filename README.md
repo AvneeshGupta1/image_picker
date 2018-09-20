@@ -12,7 +12,10 @@ you need to add in your strings.xml files
     <string name="color_progress_bar">#006699</string>
     <string name="color_background">#FFFFFF</string>
 
-<activity
+
+add these activity in your menifest
+
+        <activity
             android:name="com.nguyenhoanglam.imagepicker.ui.imagepicker.ImagePickerActivity"
             android:configChanges="orientation|screenSize"
             />
