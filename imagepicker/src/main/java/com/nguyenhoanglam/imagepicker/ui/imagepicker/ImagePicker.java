@@ -32,20 +32,30 @@ public class ImagePicker {
     }
 
     public static Builder with(Activity activity, int requestCode) {
+        int colorToolbar = activity.getResources().getColor(R.color.color_toolbar);
+        int colorStatusBar = activity.getResources().getColor(R.color.color_status_bar);
+        int colorToolbarText = activity.getResources().getColor(R.color.color_toolbar_text);
+        int colorToolbarIconColor = activity.getResources().getColor(R.color.color_toolbar_icon);
+        int colorToolbarProgress = activity.getResources().getColor(R.color.color_progress_bar);
+        int colorBackground = activity.getResources().getColor(R.color.color_background);
+
         ActivityBuilder builder = new ActivityBuilder(activity, Config.TYPE_IMAGE, requestCode);
         builder.setFolderTitle(activity.getString(R.string.title_folder))
                 .setImageTitle(activity.getString(R.string.title_image))         //  Picture title (works with FolderMode = false)
-                .setDoneTitle(activity.getString(R.string.title_done))               //  Done button title
-                .setToolbarColor(activity.getString(R.string.color_toolbar))         //  Toolbar color
-                .setStatusBarColor(activity.getString(R.string.color_status_bar))       //  StatusBar color (works with SDK >= 21  )
-                .setToolbarTextColor(activity.getString(R.string.color_toolbar_text))     //  Toolbar text color (Title and Done button)
-                .setToolbarIconColor(activity.getString(R.string.color_toolbar_icon))     //  Toolbar icon color (Back and Camera button)
-                .setProgressBarColor(activity.getString(R.string.color_progress_bar))     //  ProgressBar color
-                .setBackgroundColor(activity.getString(R.string.color_background))  //  Select multiple images or single image
+                .setDoneTitle(activity.getString(R.string.title_done))
+                .setToolbarColor(getIntToColor(colorToolbar))         //  Toolbar color
+                .setStatusBarColor(getIntToColor(colorStatusBar))      //  StatusBar color (works with SDK >= 21  )
+                .setToolbarTextColor(getIntToColor(colorToolbarText))     //  Toolbar text color (Title and Done button)
+                .setToolbarIconColor(getIntToColor(colorToolbarIconColor))     //  Toolbar icon color (Back and Camera button)
+                .setProgressBarColor(getIntToColor(colorToolbarProgress))     //  ProgressBar color
+                .setBackgroundColor(getIntToColor(colorBackground))  //  Select multiple images or single image
                 .setFolderMode(true);              //  Folder mode
         return builder;
     }
 
+    public static String getIntToColor(int color) {
+        return String.format("#%06X", (0xFFFFFF & color));
+    }
 //    public static Builder with(Fragment fragment) {
 //        return new FragmentBuilder(fragment);
 //    }
@@ -100,6 +110,7 @@ public class ImagePicker {
             config.setToolbarColor(toolbarColor);
             return this;
         }
+
 
         public Builder setStatusBarColor(String statusBarColor) {
             config.setStatusBarColor(statusBarColor);
