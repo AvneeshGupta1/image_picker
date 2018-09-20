@@ -16,6 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.nguyenhoanglam.imagepicker.ui.imagepicker.ImagePickerActivity"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity
+            android:name="com.nguyenhoanglam.imagepicker.ui.imagepicker.FilePickerActivity"
+            android:configChanges="orientation|screenSize"
+             />
+
+        <activity
+            android:name="com.nguyenhoanglam.imagepicker.ui.camera.CameraActivty"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>

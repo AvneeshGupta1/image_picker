@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion project.compileSdkVersion.toInteger()
-    buildToolsVersion project.buildToolsVersion
+    buildToolsVersion '28.0.2'
     defaultConfig {
         applicationId "xavient.com.imagepickerlib"
         minSdkVersion project.minSdkVersion

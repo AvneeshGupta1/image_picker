@@ -6,21 +6,6 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application>
-
-        <activity
-            android:name=".ui.imagepicker.ImagePickerActivity"
-            android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ui.imagepicker.FilePickerActivity"
-            android:configChanges="orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".ui.camera.CameraActivty"
-            android:screenOrientation="portrait"
-            android:theme="@style/imagepicker_CameraTheme" />
-
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -30,7 +15,5 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/imagepicker_file_paths" />
         </provider>
-
     </application>
-
 </manifest>

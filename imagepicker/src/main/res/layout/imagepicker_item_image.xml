@@ -41,7 +41,8 @@
 
     <TextView
         android:id="@+id/gif_indicator"
-        style="@style/imagepicker_TextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@color/imagepicker_black_alpha_50"
         android:paddingBottom="@dimen/imagepicker_padding_small"

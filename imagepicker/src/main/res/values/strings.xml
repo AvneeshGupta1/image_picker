@@ -30,11 +30,6 @@
     <string name="title_folder">Albums</string>
     <string name="title_image">Galleries</string>
     <string name="title_done">Done</string>
-    <string name="color_toolbar">#006699</string>
-    <string name="color_status_bar">#005588</string>
-    <string name="color_toolbar_text">#FFFFFF</string>
-    <string name="color_toolbar_icon">#FFFFFF</string>
-    <string name="color_progress_bar">#006699</string>
-    <string name="color_background">#FFFFFF</string>
+
 
 </resources>

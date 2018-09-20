@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#00FF00</color>
+    <color name="colorAccent">#0000FF</color>
+
+    <string name="color_toolbar">#FF0000</string>
+    <string name="color_status_bar">#00FF00</string>
+    <string name="color_toolbar_text">#FFFFFF</string>
+    <string name="color_toolbar_icon">#FFFFFF</string>
+    <string name="color_progress_bar">#006699</string>
+    <string name="color_background">#FFFFFF</string>
+
 </resources>

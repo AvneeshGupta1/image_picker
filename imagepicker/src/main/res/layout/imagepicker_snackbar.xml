@@ -3,11 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:parentTag="RelativeLayout">
+>
 
     <TextView
         android:id="@+id/text_snackbar_message"
-        style="@style/imagepicker_TextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/button_snackbar_action"
@@ -16,7 +17,8 @@
 
     <Button
         android:id="@+id/button_snackbar_action"
-        style="@style/imagepicker_TextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"

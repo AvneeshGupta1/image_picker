@@ -24,7 +24,7 @@ public class PickerManager {
 
     private ArrayList<FileType> fileTypes;
 
-    private int theme = R.style.LibAppTheme;
+//    private int theme = R.style.LibAppTheme;
 
     private boolean showVideos;
 
@@ -118,13 +118,13 @@ public class PickerManager {
 //        maxCount = 0;
     }
 
-    public int getTheme() {
-        return theme;
-    }
-
-    public void setTheme(int theme) {
-        this.theme = theme;
-    }
+//    public int getTheme() {
+//        return theme;
+//    }
+//
+//    public void setTheme(int theme) {
+//        this.theme = theme;
+//    }
 
     public boolean showVideo() {
         return showVideos;
