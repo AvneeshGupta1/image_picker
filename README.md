@@ -3,8 +3,9 @@ This is customize image picker
 
 override the strings 
 
+you need to add in your strings.xml files 
 
-<string name="color_toolbar">#FF0000</string>
+    <string name="color_toolbar">#FF0000</string>
     <string name="color_status_bar">#00FF00</string>
     <string name="color_toolbar_text">#FFFFFF</string>
     <string name="color_toolbar_icon">#FFFFFF</string>
@@ -24,3 +25,6 @@ override the strings
             android:name="com.nguyenhoanglam.imagepicker.ui.camera.CameraActivty"
             android:screenOrientation="portrait"
             />
+            
+            implementation 'com.github.AvneeshGupta1:image_picker:-SNAPSHOT'
+               maven { url "https://jitpack.io" }
