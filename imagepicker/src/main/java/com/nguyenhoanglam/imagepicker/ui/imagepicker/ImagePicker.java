@@ -52,6 +52,42 @@ public class ImagePicker {
                 .setFolderMode(true);              //  Folder mode
         return builder;
     }
+    public static Builder with(Fragment fragment,int requestCode) {
+        return new FragmentBuilder(fragment,requestCode);
+    }
+    static class FragmentBuilder extends Builder {
+        private Fragment fragment;
+        private int requestCode;
+
+        public FragmentBuilder(Fragment fragment, int requestCode) {
+            super(fragment);
+            this.fragment = fragment;
+            this.requestCode = requestCode;
+        }
+
+
+        @Override
+        public void start() {
+            Intent intent;
+            if (!config.isCameraOnly()) {
+                intent = new Intent(fragment.getActivity(), ImagePickerActivity.class);
+                intent.putExtra(Config.EXTRA_CONFIG, config);
+                intent.putExtra(Config.EXTRA_REQUEST_CODE, requestCode);
+                intent.putExtra(Config.EXTRA_RESOURCE_TYPE, Config.TYPE_IMAGE);
+                fragment.startActivityForResult(intent, requestCode);
+                fragment.getActivity().overridePendingTransition(R.anim.enter, R.anim.exit);
+            } else  {
+                intent = new Intent(fragment.getActivity(), CameraActivty.class);
+                intent.putExtra(Config.EXTRA_REQUEST_CODE, requestCode);
+                intent.putExtra(Config.EXTRA_CONFIG, config);
+                intent.putExtra(Config.EXTRA_RESOURCE_TYPE, Config.TYPE_IMAGE);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                intent.putExtra(Config.EXTRA_REQUEST_CODE, requestCode);
+                fragment.getActivity().overridePendingTransition(0, 0);
+                fragment.startActivityForResult(intent, requestCode);
+            }
+        }
+    }
 
     public static String getIntToColor(int color) {
         return String.format("#%06X", (0xFFFFFF & color));
@@ -211,6 +247,5 @@ public class ImagePicker {
             config.setSelectedImages(new ArrayList<Image>());
         }
     }
-
 }
 
