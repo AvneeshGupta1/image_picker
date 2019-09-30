@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Development-image_picker.iml" filepath="$PROJECT_DIR$/Development-image_picker.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avneesh-image_picker.iml" filepath="$PROJECT_DIR$/avneesh-image_picker.iml" />
       <module fileurl="file://$PROJECT_DIR$/image_picker.iml" filepath="$PROJECT_DIR$/image_picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/image_picker-app.iml" filepath="$PROJECT_DIR$/app/image_picker-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagepicker/image_picker-imagepicker.iml" filepath="$PROJECT_DIR$/imagepicker/image_picker-imagepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/imagepicker/imagepicker.iml" filepath="$PROJECT_DIR$/imagepicker/imagepicker.iml" />
     </modules>
   </component>

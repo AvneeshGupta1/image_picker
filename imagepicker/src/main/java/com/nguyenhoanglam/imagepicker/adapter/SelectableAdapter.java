@@ -1,6 +1,6 @@
 package com.nguyenhoanglam.imagepicker.adapter;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.nguyenhoanglam.imagepicker.model.BaseFile;
 
