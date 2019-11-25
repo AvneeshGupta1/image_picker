@@ -3,12 +3,12 @@ This is customize image picker
  
   you need to add in your strings.xml files  if you want to change colors
   
-    <string name="color_toolbar">#FF0000</string>
-    <string name="color_status_bar">#00FF00</string>
-    <string name="color_toolbar_text">#FFFFFF</string>
-    <string name="color_toolbar_icon">#FFFFFF</string>
-    <string name="color_progress_bar">#006699</string>
-    <string name="color_background">#FFFFFF</string>
+    <color name="color_toolbar">#FF0000</color>
+    <color name="color_status_bar">#00FF00</color>
+    <color name="color_toolbar_text">#FFFFFF</color>
+    <color name="color_toolbar_icon">#FFFFFF</color>
+    <color name="color_progress_bar">#006699</color>
+    <color name="color_background">#FFFFFF</color>
 
 
 add these activity in your menifest
